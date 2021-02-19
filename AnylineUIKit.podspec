@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AnylineUIKit"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "The AnylineUIKit is an additional UI component for the Anyline OCR SDK"
   spec.description  = "Anyline - https://www.anyline.com - is a mobile OCR SDK, which can be customized to scan all kinds of numbers, characters, text and codes. The Anyline UIKit Framework is an additional UI component for the Anyline SDK product."
 
