@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  AnylineUIKit
+
+  Created by Mac on 10/23/20.
+  Copyright © 2020 Anyline. All rights reserved.
+*/
+
+/* Common */
+"common.ok.button" = "OK";
+"common.cancel.button" = "CANCEL";
+
+/* Select format */
+"selectFormat.title.label" = "Please select formats";
+"selectFormat.description.label" = "Select which formats should be detected automaticlly:";
+"selectFormat.allPortrait.label" = "All portrait formats";
+"selectFormat.selectedPortrait.label" = "Only selected portrait formats:";
+"selectFormat.a4.label" = "A4";
+"selectFormat.complimentSlip.label" = "Compliment Slip";
+"selectFormat.businessCard.label" = "Business Card";
+"selectFormat.letter.label" = "Letter";
+"selectFormat.customRatio.label" = "Custom Ratio";
+

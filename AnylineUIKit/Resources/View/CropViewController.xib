@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CropViewController" customModule="AnylineUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="FII-lD-DNw" id="Pyk-dn-Wnm"/>
+                <outlet property="croppingView" destination="xdA-Yg-mpR" id="A7u-1i-K6R"/>
+                <outlet property="pageImageView" destination="Aqz-Qn-9Tg" id="zN7-hi-Pmh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FII-lD-DNw">
+                    <rect key="frame" x="8" y="8" width="359" height="651"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-Qn-9Tg">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="651"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdA-Yg-mpR" customClass="CroppingView" customModule="AnylineUIKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="651"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Aqz-Qn-9Tg" firstAttribute="leading" secondItem="FII-lD-DNw" secondAttribute="leading" id="84w-yI-jvN"/>
+                        <constraint firstAttribute="trailing" secondItem="xdA-Yg-mpR" secondAttribute="trailing" id="9C4-aN-yGL"/>
+                        <constraint firstItem="xdA-Yg-mpR" firstAttribute="top" secondItem="FII-lD-DNw" secondAttribute="top" id="Ego-sT-JzJ"/>
+                        <constraint firstItem="xdA-Yg-mpR" firstAttribute="leading" secondItem="FII-lD-DNw" secondAttribute="leading" id="HcP-UW-FnK"/>
+                        <constraint firstAttribute="trailing" secondItem="Aqz-Qn-9Tg" secondAttribute="trailing" id="UMb-Cv-zcG"/>
+                        <constraint firstAttribute="bottom" secondItem="xdA-Yg-mpR" secondAttribute="bottom" id="i3v-1v-SIs"/>
+                        <constraint firstItem="Aqz-Qn-9Tg" firstAttribute="top" secondItem="FII-lD-DNw" secondAttribute="top" id="jro-aH-8DD"/>
+                        <constraint firstAttribute="bottom" secondItem="Aqz-Qn-9Tg" secondAttribute="bottom" id="k0H-CO-aMo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FII-lD-DNw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="3TL-E9-cu0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FII-lD-DNw" secondAttribute="bottom" constant="8" id="blZ-N4-0Pf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FII-lD-DNw" secondAttribute="trailing" constant="8" id="hPf-sC-4uf"/>
+                <constraint firstItem="FII-lD-DNw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="mzl-AQ-Hfz"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

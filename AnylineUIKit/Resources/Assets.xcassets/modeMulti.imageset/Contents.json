@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "doc_scan_ui_mode_multi.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "delete-black-24dp.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,24 @@
+//
+//  UIResponder+Extension.swift
+//  AnylineUIKit
+//
+//  Created by Mac on 11/6/20.
+//  Copyright © 2020 Anyline. All rights reserved.
+//
+
+import UIKit
+
+extension UIResponder {
+
+    static weak var responder: UIResponder?
+
+    static func currentFirst() -> UIResponder? {
+        responder = nil
+        UIApplication.shared.sendAction(#selector(trap), to: nil, from: nil, for: nil)
+        return responder
+    }
+
+    @objc private func trap() {
+        UIResponder.responder = self
+    }
+}

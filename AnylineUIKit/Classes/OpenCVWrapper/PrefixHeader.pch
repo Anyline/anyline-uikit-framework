@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  AnylineUIKit
+//
+//  Created by Mac on 12/10/20.
+//  Copyright © 2020 Anyline. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __cplusplus
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgcodecs/ios.h>
+#include <opencv2/imgproc/imgproc_c.h>
+#else
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Availability.h>
+#endif
+#endif /* PrefixHeader_pch */

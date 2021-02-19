@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "open_with-black-24dp.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
