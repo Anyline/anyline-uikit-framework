@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Anyline
 
 public class AnylineUIKit {
     
@@ -16,8 +17,16 @@ public class AnylineUIKit {
     
     private init() {}
     
-    public static func setup(with licenseKey: String) {
+    public static func setup(with licenseKey: String) throws -> Bool {
         shared.licenseKey = licenseKey
+        
+        do {
+            try AnylineSDK.setup(withLicenseKey: licenseKey)
+        } catch let error {
+            throw error
+        }
+        
+        return true;
     }
 }
 

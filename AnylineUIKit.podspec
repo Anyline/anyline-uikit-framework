@@ -10,18 +10,22 @@ Pod::Spec.new do |spec|
 
   spec.name         = "AnylineUIKit"
   spec.version      = "0.0.2"
-  spec.summary      = "A short description of AnylineUIKit."
-  spec.description  = "Description of AnylineUIKit."
+  spec.summary      = "The AnylineUIKit is an additional UI component for the Anyline OCR SDK"
+  spec.description  = "Anyline - https://www.anyline.com - is a mobile OCR SDK, which can be customized to scan all kinds of numbers, characters, text and codes. The Anyline UIKit Framework is an additional UI component for the Anyline SDK product."
 
-  spec.homepage     = "http://EXAMPLE/AnylineUIKit"
-  spec.license      = "MIT"
-  spec.author             = { "Anastasiya Markovets" => "anastasiya.markovets@9y.co" }
+  spec.homepage     = "https://github.com/Anyline/anyline-uikit-framework"
+  spec.license      = "https://github.com/Anyline/anyline-uikit-framework/license.md"
+  spec.author       = { "Anyline GmbH" => "support@anyline.com" }
   spec.platform     = :ios, "12.0"
-  spec.swift_version = '4.0'
+  spec.swift_version = '4.2'
 
-  spec.source       = { :path => '.' }
+  # spec.source       = { :http => "https://github.com/Anyline/anyline-uikit-framework" }
+  spec.source       = { :git => "https://github.com/Anyline/anyline-uikit-framework.git" }
+
+  # spec.source       = { :path => '.' }
+
   spec.resources = ["AnylineUIKit/Resources/**/*.{xib,storyboard,xcassets,strings,json}"]
-  spec.dependency 'Anyline', '~> 25'
+  spec.dependency 'Anyline', '>= 25'
   spec.dependency 'SnapKit', '~> 5.0'
   spec.dependency 'OpenCV'
   spec.static_framework = true

@@ -176,9 +176,8 @@ private extension ScanView {
         do {
             guard let configPath = Bundle.main.path(forResource: "document_view_config", ofType: "json") else { return  }
             guard let scanViewPluginConfig = ALScanViewPluginConfig(jsonFilePath: configPath) else { return  }
-            guard let licenseKey = AnylineUIKit.shared.licenseKey else { return }
             
-            self.documentScanPlugin = try ALDocumentScanPlugin(pluginID: "DOCUMENT", licenseKey: licenseKey, delegate: self)
+            self.documentScanPlugin = try ALDocumentScanPlugin(pluginID: "DOCUMENT", delegate: self)
             documentScanPlugin?.justDetectCornersIfPossible = false
             self.documentScanPlugin?.addInfoDelegate(self)
             guard let scanPlugin = self.documentScanPlugin else {
